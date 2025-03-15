@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez con Bots</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Ajedrez con Bots</h1>
+
+    <button id="theme-toggle">Modo Oscuro 🌙</button>
+
+    <div id="bot-buttons">
+        <button onclick="startGame(1500)">Jugar vs Bot (ELO 1500)</button>
+        <button onclick="startGame(1800)">Jugar vs Bot (ELO 1800)</button>
+        <button onclick="startGame(2100)">Jugar vs Bot (ELO 2100)</button>
+    </div>
+
+    <div id="game-container">
+        <div id="board"></div>
+        <div id="move-history">
+            <h3>Historial de Movimientos</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <h2>Ajedrez 960</h2>
+    <button onclick="generateChess960()">Generar Nueva Posición</button>
+    <p id="position960"></p>
+
+    <audio id="move-sound" src="move.mp3"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
