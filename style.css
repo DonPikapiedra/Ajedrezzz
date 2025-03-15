@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+#bot-buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#board {
+    width: 400px;
+}
+
+#move-history {
+    text-align: left;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dark-mode #move-history {
+    background: #444;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
